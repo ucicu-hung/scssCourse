@@ -13,13 +13,14 @@
 
 
 .header{
-    width: 500px;
+    color: $text-color;
     @include pad {
-        width: 13px;
+        color: $success;
         font-size: 20px;
     }
     @include mobile{
-        width: 10px;
+        color: $info;
+        font-size: 14px;
     }
 
 }

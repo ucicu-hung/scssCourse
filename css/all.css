@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,64 +54,115 @@ table {
 }
 
 .header {
-  width: 500px;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   .header {
-    width: 13px;
+    color: rgb(77, 223, 29);
     font-size: 20px;
   }
 }
 @media (max-width: 568px) {
   .header {
-    width: 10px;
+    color: #dc3545;
+    font-size: 14px;
   }
 }
 
-/* layout */
-.header a {
-  font-size: 16px;
-  width: 500px;
-  color: #c55b5b;
+/* 基本樣式 */
+body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* layout */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh; /* 填滿視窗高度*/
+}
+
+.header {
+  background-color: #333333;
+  padding: 15px;
+  text-align: center;
+}
+.header a {
+  font-size: 16px;
+  color: #c55b5b;
+}
 .header h1 {
   font-size: 24px;
   font-family: "monospace";
 }
 
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; /* 它會撐滿除了 header 高度以外的剩餘空間*/
+}
 .content a {
   color: #c55b5b;
   font-size: 14px;
 }
 
+.leftmenu {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
+.container-page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
 /* content */
 .box1 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }
 
 .box2 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }
 
 .box3 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }
 
 .box4 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }
 
 .box5 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }

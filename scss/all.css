@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -67,50 +68,88 @@ table {
   }
 }
 
+/* 基本樣式 */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 /* layout */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 填滿視窗高度*/
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
 .header a {
   font-size: 16px;
   width: 500px;
   color: #c55b5b;
 }
-
 .header h1 {
   font-size: 24px;
   font-family: "monospace";
 }
 
+.content {
+  display: flex;
+  flex: 1; /* 它會撐滿除了 header 高度以外的剩餘空間*/
+}
 .content a {
   color: #c55b5b;
   font-size: 14px;
 }
 
+.leftmenu {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
+.container-page {
+  flex: 1;
+  padding: 20px;
+}
+
 /* content */
 .box1 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }
 
 .box2 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }
 
 .box3 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }
 
 .box4 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }
 
 .box5 {
-  background-color: rgb(218, 149, 46);
+  background-color: #333333;
   width: 50px;
   height: 50px;
 }/*# sourceMappingURL=all.css.map */

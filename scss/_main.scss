@@ -1,42 +1,80 @@
+/* 基本樣式 */
+body, html {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+*, *::before, *::after {
+   box-sizing: inherit;
+}
+
+
 /* layout */
-.header a{
-   font-size: $font-m;  
-   width: 500px;
-   color: $link-color;
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   height: 100vh; /* 填滿視窗高度*/
 }
-.header h1{
-   font-size: $font-l; 
-   font-family: $font-family-title;
+.header {
+   background-color: $primary;
+   padding: 15px;
+   text-align: center;
+   a{
+      font-size: $font-m;  
+      color: $link-color;
+   }
+   h1{
+      font-size: $font-l; 
+      font-family: $font-family-title;
+   }
 }
-.content a{
-   color: $link-color; 
-   font-size: $font-s;
+.content {
+   display: flex;
+   flex: 1; /* 它會撐滿除了 header 高度以外的剩餘空間*/
+   a{
+      color: $link-color; 
+      font-size: $font-s;
+   }
+   
 }
+.leftmenu {
+   width: 200px;
+   background-color: $second;
+   padding: 15px;
+}
+.container-page {
+   flex: 1;
+   padding: 20px;
+   overflow-y: auto;
+}
+
+
 
 
 /* content */ 
 .box1{
-   background-color: $primary-color;
+   background-color: $primary;
    width: 50px;
    height: 50px;
 }
 .box2{
-   background-color: $primary-color;
+   background-color: $primary;
    width: 50px;
    height: 50px;
 }
 .box3{
-   background-color: $primary-color;
+   background-color: $primary;
    width: 50px;
    height: 50px;
 }
 .box4{
-   background-color: $primary-color;
+   background-color: $primary;
    width: 50px;
    height: 50px;
 }
 .box5{
-   background-color: $primary-color;
+   background-color: $primary;
    width: 50px;
    height: 50px;
 }
