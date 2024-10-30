@@ -1,1 +1,116 @@
-/* No CSS *//*# sourceMappingURL=all.css.map */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  width: 500px;
+}
+@media (max-width: 768px) {
+  .header {
+    width: 13px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 568px) {
+  .header {
+    width: 10px;
+  }
+}
+
+/* layout */
+.header a {
+  font-size: 16px;
+  width: 500px;
+  color: #c55b5b;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-family: "monospace";
+}
+
+.content a {
+  color: #c55b5b;
+  font-size: 14px;
+}
+
+/* content */
+.box1 {
+  background-color: rgb(218, 149, 46);
+  width: 50px;
+  height: 50px;
+}
+
+.box2 {
+  background-color: rgb(218, 149, 46);
+  width: 50px;
+  height: 50px;
+}
+
+.box3 {
+  background-color: rgb(218, 149, 46);
+  width: 50px;
+  height: 50px;
+}
+
+.box4 {
+  background-color: rgb(218, 149, 46);
+  width: 50px;
+  height: 50px;
+}
+
+.box5 {
+  background-color: rgb(218, 149, 46);
+  width: 50px;
+  height: 50px;
+}

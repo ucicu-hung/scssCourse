@@ -71,7 +71,7 @@ table {
 .header a {
   font-size: 16px;
   width: 500px;
-  color: #ff0000;
+  color: #c55b5b;
 }
 
 .header h1 {
@@ -80,7 +80,7 @@ table {
 }
 
 .content a {
-  color: #ff0000;
+  color: #c55b5b;
   font-size: 14px;
 }
 
