@@ -1,0 +1,43 @@
+/* layout */
+.header a{
+   font-size: $font-m;  
+   width: 500px;
+   color: $link-color;
+}
+.header h1{
+   font-size: $font-l; 
+   font-family: $font-family-title;
+}
+.content a{
+   color: $link-color; 
+   font-size: $font-s;
+}
+
+
+/* content */ 
+.box1{
+   background-color: $primary-color;
+   width: 50px;
+   height: 50px;
+}
+.box2{
+   background-color: $primary-color;
+   width: 50px;
+   height: 50px;
+}
+.box3{
+   background-color: $primary-color;
+   width: 50px;
+   height: 50px;
+}
+.box4{
+   background-color: $primary-color;
+   width: 50px;
+   height: 50px;
+}
+.box5{
+   background-color: $primary-color;
+   width: 50px;
+   height: 50px;
+}
+

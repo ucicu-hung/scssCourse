@@ -1,0 +1,14 @@
+//建立all.scss
+
+//變數
+@import "variables";
+//清空瀏覽器預色值
+@import "reset";
+//mixin
+@import "mixin";
+
+//自訂義的CSS
+@import "pages";
+
+
+//第三方插件
